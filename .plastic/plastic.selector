@@ -1,0 +1,3 @@
+rep "New Unity Project (1)@Tyler_Pritchard@cloud"
+  path "/"
+    smartbranch "/main"
