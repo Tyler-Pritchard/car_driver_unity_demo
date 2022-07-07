@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Delivery : MonoBehaviour
 {
-    bool hasPackage;
+    bool hasPackage = false;
     float destroyDelay = 0.5f;
 
     void OnCollisionEnter2D(Collision2D other) 
@@ -12,7 +12,8 @@ public class Delivery : MonoBehaviour
         Debug.Log("Look out");   
     }
 
-    void OnTriggerEnter2D(Collider2D other) {
+    void OnTriggerEnter2D(Collider2D other) 
+    {
         if (other.tag == "Package") {
             Debug.Log("Package acquired");
             hasPackage = true;
